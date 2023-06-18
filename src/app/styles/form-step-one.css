@@ -1,9 +1,5 @@
-@media (max-width: 620px) {
-  .create-container {
-    padding: 62px 55px;
-  }
-}
-.card-svg, .close-svg{
+.card-svg,
+.close-svg {
   cursor: pointer;
 }
 .create-container {

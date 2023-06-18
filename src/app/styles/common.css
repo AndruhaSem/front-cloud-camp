@@ -1,75 +1,93 @@
-@font-face {font-family: "SB Sans Interface"; src: url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.eot"); src: url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.woff") format("woff"), url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.svg#SB Sans Interface") format("svg"); }
+@font-face {
+  font-family: "SB Sans Interface";
+  src: url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.eot");
+  src: url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/37086b994764dba84b2ee0f1083bfeed.svg#SB Sans Interface")
+      format("svg");
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: #f4f4f5;
+  background-color: #f4f4f5;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-input:focus, textarea:focus, select:focus {
-    outline: none;
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
 }
 .form-control {
-    margin-top: 24px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 label {
-    font-size: 14px;
-    line-height: 20px;
-    color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
 }
 .form-control-input {
-    margin-top: 8px;
-    width: 100%;
-    padding: 12px;
-    background: rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+  margin-top: 8px;
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 .error-input {
-    margin-top: 5px;
-    color: #d50000;
-    font-size: 12px;
+  margin-top: 5px;
+  color: #d50000;
+  font-size: 12px;
 }
 .isvalid {
-    background: rgba(85, 88, 250, 0.4);
+  background: rgba(85, 88, 250, 0.4);
 }
 .main-container {
-    max-width: 900px;
-    margin: 24px auto;
-    background: #fff;
-    border-radius: 12px 12px 0 0;
-    line-height: 20px;
-    font-family: "SB Sans Interface", serif;
+  max-width: 900px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  line-height: 20px;
+  font-family: "SB Sans Interface", serif;
 }
 .primary-button {
-    padding: 12px 16px;
-    border-radius: 4px;
-    color: #fff;
-    background: #5558FA;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #fff;
+  background: #5558fa;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 .primary-stroke-button {
-    padding: 12px 16px;
-    border-radius: 4px;
-    color: #5558FA;
-    background: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    border: 1px solid #5558FA;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: #5558fa;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #5558fa;
 }
 .invalid {
-    pointer-events: none;
+  background: rgba(85, 88, 250, 0.4);
+}
+.invalid a {
+  pointer-events: none;
 }

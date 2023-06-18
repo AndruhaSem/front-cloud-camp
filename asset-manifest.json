@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/front-cloud-camp/static/css/main.300319e0.css",
-    "main.js": "/front-cloud-camp/static/js/main.b8ecc65f.js",
+    "main.js": "/front-cloud-camp/static/js/main.e3d1f86e.js",
     "index.html": "/front-cloud-camp/index.html",
     "main.300319e0.css.map": "/front-cloud-camp/static/css/main.300319e0.css.map",
-    "main.b8ecc65f.js.map": "/front-cloud-camp/static/js/main.b8ecc65f.js.map"
+    "main.e3d1f86e.js.map": "/front-cloud-camp/static/js/main.e3d1f86e.js.map"
   },
   "entrypoints": [
     "static/css/main.300319e0.css",
-    "static/js/main.b8ecc65f.js"
+    "static/js/main.e3d1f86e.js"
   ]
 }

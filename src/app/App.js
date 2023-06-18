@@ -6,10 +6,10 @@ import history from "./utils/history";
 function App() {
   return (
     <div className="main-container">
-      {/* <BrowserRouter basename={history.location.pathname || ""}> */}
-      <Route path="/create" component={FormsScreen} />
-      <Route path="/" exact component={HomeScreen} />
-      {/* </BrowserRouter> */}
+      <BrowserRouter basename={history.location.pathname || ""}>
+        <Route path="/create" component={FormsScreen} />
+        <Route path="/" exact component={HomeScreen} />
+      </BrowserRouter>
     </div>
   );
 }

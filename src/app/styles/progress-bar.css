@@ -1,0 +1,53 @@
+.create-progres__bar {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 66px;
+}
+.progress-point {
+  display: flex;
+  justify-content: space-between;
+}
+.point {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.point-span {
+  color: #a6a6a6;
+  position: relative;
+  top: 16px;
+}
+.active {
+  color: #5558fa;
+}
+.progres {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.08);
+  padding: 0 10px 0 10px;
+  position: relative;
+  bottom: 32px;
+}
+.container-made {
+  padding: 0 10px 0 10px;
+  height: 8px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+}
+.made {
+  height: 8px;
+  flex: 1;
+}
+.made.active {
+  background: #5558fa;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.point-svg {
+  z-index: 1;
+}

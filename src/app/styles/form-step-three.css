@@ -1,0 +1,15 @@
+.about__textarea {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    color: rgba(0, 0, 0, 0.48);
+    font-family: 'SB Sans Interface', serif;
+    font-size: 14px;
+}
+.about-counter-container {
+    float: right;
+    font-size: 14px;
+    color: #333;
+}

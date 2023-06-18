@@ -1,0 +1,54 @@
+.label-form-advantages {
+  margin-top: 24px;
+}
+.container__advantages__form{
+  display: flex;
+  gap: 10px;
+}
+.container-advantages__input{
+  width: 100%;
+}
+.container-advantages__input {
+  background: #ffffff;
+}
+.btn-advantages__form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border: 1.5px solid #5558fa;
+  border-radius: 4px;
+  color: #5558fa;
+  font-size: 25px;
+}
+.advantages-remove-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-checkboxs__form,.container-radios_form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 25px;
+}
+.advantages__checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+.advantages__radio {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+.group-checkbox,.group-radio {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

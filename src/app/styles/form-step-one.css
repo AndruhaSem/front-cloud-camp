@@ -1,0 +1,39 @@
+@media (max-width: 620px) {
+  .create-container {
+    padding: 62px 55px;
+  }
+}
+.card-svg, .close-svg{
+  cursor: pointer;
+}
+.create-container {
+  max-width: 900px;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 24px auto;
+  padding: 62px 110px;
+  background: #fff;
+  border-radius: 12px 12px 0 0;
+  line-height: 20px;
+}
+.create-form__container {
+  max-width: 400px;
+}
+.create-button__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.basic-multi-select {
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.48);
+  padding-left: 12px;
+}

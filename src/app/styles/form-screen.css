@@ -1,18 +1,15 @@
 @media (max-width: 620px) {
   .main-container {
-    .forms-screen-container {
-      padding: 25px 24px;
-    }
+    padding: 25px 24px;
   }
 }
 @media (min-width: 480px) {
   .form-modal {
     width: 396px;
   }
-  .main-container {
-    .error-modal {
-      width: 392px;
-    }
+
+  .error-modal {
+    width: 392px;
   }
 }
 .forms-screen-container {

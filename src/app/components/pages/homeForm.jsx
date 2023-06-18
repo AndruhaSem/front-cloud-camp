@@ -34,24 +34,26 @@ const HomeForm = () => {
   };
   const isValid = Object.keys(errors).length === 0;
   return (
-    <form>
-      <TextFieldMask
-        value={form.phone}
-        label="Номер телефона"
-        name="phone"
-        onChange={handleChange}
-        placeholder="+7 (999) 999-99-99"
-        error={errors.phone}
-      />
-      <TextField
-        label="Email"
-        name="email"
-        id="email"
-        value={form.email}
-        onChange={handleChange}
-        error={errors.email}
-        placeholder="tim.jennings@example.com"
-      />
+    <>
+      <form>
+        <TextFieldMask
+          value={form.phone}
+          label="Номер телефона"
+          name="phone"
+          onChange={handleChange}
+          placeholder="+7 (999) 999-99-99"
+          error={errors.phone}
+        />
+        <TextField
+          label="Email"
+          name="email"
+          id="email"
+          value={form.email}
+          onChange={handleChange}
+          error={errors.email}
+          placeholder="tim.jennings@example.com"
+        />
+      </form>
       <button
         disabled={!isValid}
         className={
@@ -61,7 +63,7 @@ const HomeForm = () => {
       >
         <Link to="/create">Начать</Link>
       </button>
-    </form>
+    </>
   );
 };
 

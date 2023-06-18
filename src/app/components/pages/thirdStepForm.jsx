@@ -44,7 +44,7 @@ const ThirdStepForm = () => {
   const isValid = Object.keys(errors).length === 0;
 
   function lettersCount() {
-    return form.about.replace(/\s/g, "").length
+    return form.about.replace(/\s/g, "").length;
   }
 
   function handleSendForm() {
@@ -58,28 +58,28 @@ const ThirdStepForm = () => {
         onCloseModal={handleModalClose}
       />
       <form>
+        <div>
           <div>
-            <div>
-              <label>About</label>
-            </div>
-            <textarea
-              id="field-about"
-              className="about__textarea"
-              placeholder="Placeholder"
-              rows="3"
-              name="about"
-              value={form.about}
-              onChange={handleAboutChange}
-            />
-            <div className="about-counter-container">
-              <div>{lettersCount()}</div>
-            </div>
-            <div>
-              {errors.about ? (
-                  <p className="error-input">{errors.about}</p>
-              ) : null}
-            </div>
+            <label>About</label>
           </div>
+          <textarea
+            id="field-about"
+            className="about__textarea"
+            placeholder="Placeholder"
+            rows="3"
+            name="about"
+            value={form.about}
+            onChange={handleAboutChange}
+          />
+          <div className="about-counter-container">
+            <div>{lettersCount()}</div>
+          </div>
+          <div>
+            {errors.about ? (
+              <p className="error-input">{errors.about}</p>
+            ) : null}
+          </div>
+        </div>
       </form>
       <div className="actions-container">
         <button
@@ -93,7 +93,7 @@ const ThirdStepForm = () => {
           disabled={!isValid}
           className={"primary-button " + (!isValid ? "invalid" : "")}
           onClick={handleSendForm}
-          id="button-next"
+          id="button-send"
         >
           Отправить
         </button>

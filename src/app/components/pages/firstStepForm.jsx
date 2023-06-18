@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SelectField from "../forms/selectField";
-import { formUpdate, getForm, stepUpdate, getMaxStep } from "../../store/form";
+import { formUpdate, getForm, stepUpdate } from "../../store/form";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -10,7 +10,7 @@ import * as yup from "yup";
 const FirstStepForm = () => {
   const sexOptions = [
     { id: "field-sex-option-man", title: "man", value: "man" },
-    { id: "field-sex-option-woman", title: " woman", value: "woman" },
+    { id: "field-sex-option-woman", title: "woman", value: "woman" },
   ];
   const dispatch = useDispatch();
   const form = useSelector(getForm());

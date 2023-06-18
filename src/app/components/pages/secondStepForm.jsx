@@ -68,7 +68,7 @@ const SecondStepForm = () => {
                   value={el}
                   placeholder="placeholder"
                   className="form-control-input"
-                  id={`field-advantages-${index + 1}`}
+                  id={`field-advatages-${index + 1}`}
                 />
                 {errors && errors[`advantages["${index}"]`] ? (
                   <p className="error-input">

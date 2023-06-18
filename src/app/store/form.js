@@ -1,25 +1,26 @@
 import { createSlice } from "@reduxjs/toolkit";
 import apiServices from "../services/form.services";
+const form = {
+  phone: "",
+  email: "",
+  nickname: "",
+  name: "",
+  sername: "",
+  sex: "",
+  advantages: [],
+  checkbox_group: [],
+  radio_group: "",
+  about: "",
+};
 
 const formSlise = createSlice({
   name: "form",
   initialState: {
-    entities: {
-      phone: "",
-      email: "",
-      nickname: "",
-      name: "",
-      sername: "",
-      sex: "",
-      advantages: [],
-      checkbox_group: [],
-      radio_group: "",
-      about: "",
-    },
+    entities: form,
     step: 1,
     maxStep: 3,
     status: null,
-    modal_is_opened: false
+    modal_is_opened: false,
   },
   reducers: {
     formUpdateSuccessed: (state, action) => {
@@ -53,10 +54,17 @@ const formSlise = createSlice({
       state.entities[action.payload.name] = action.payload.value;
     },
     changeStatus: (state, action) => {
-      state.status= action.payload.success;
+      state.status = action.payload.success;
     },
     updateModalState: (state, action) => {
       state.modal_is_opened = action.payload;
+    },
+    removeForm: (state, action) => {
+      state.entities = form;
+      state.step = 1;
+      state.maxStep = 3;
+      state.status = null;
+      state.modal_is_opened = false;
     },
   },
 });
@@ -70,7 +78,8 @@ const {
   updateCheckedValue,
   updateRadioValue,
   changeStatus,
-  updateModalState
+  updateModalState,
+  removeForm,
 } = actions;
 
 export const formUpdate = (data) => (dispatch) => {
@@ -100,12 +109,15 @@ export const closeModal = () => (dispatch) => {
 export const sendForm = (payload) => async (dispatch) => {
   try {
     await apiServices.post(payload);
-    dispatch(changeStatus({success: true}));
+    dispatch(changeStatus({ success: true }));
     dispatch(updateModalState(true));
   } catch (err) {
-    dispatch(changeStatus({sucess: false}));
+    dispatch(changeStatus({ sucess: false }));
     dispatch(updateModalState(true));
   }
+};
+export const updateForm = () => (dispatch) => {
+  dispatch(removeForm());
 };
 
 export const getForm = () => (state) => state.form.entities;

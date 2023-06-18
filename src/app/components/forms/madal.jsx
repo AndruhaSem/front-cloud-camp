@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import SuccessIcon from "../icons/successIcon";
 import ErrorIcon from "../icons/errorIcon";
 import CloseModalIcon from "../icons/closeModalIcon";
+import { updateForm } from "../../store/form";
+import { useDispatch } from "react-redux";
 
 const ModalWindo = ({ isOpened, status, onCloseModal }) => {
+  const dispatch = useDispatch();
   if (isOpened) {
     return (
       <div className={"container-modal active"}>
@@ -33,7 +36,11 @@ const ModalWindo = ({ isOpened, status, onCloseModal }) => {
               }
             >
               {status ? (
-                <button className="btn-modal-ok" id="button-to-main">
+                <button
+                  className="btn-modal-ok"
+                  id="button-to-main"
+                  onClick={() => dispatch(updateForm())}
+                >
                   <Link to="/">На главную</Link>
                 </button>
               ) : (
